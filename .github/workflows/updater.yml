@@ -38,7 +38,7 @@ jobs:
           # URL of the file to download
           url: https://download.sysinternals.com/files/PSTools.zip
           # New filename to rename the downloaded file
-          destination: .
+          destination: PSTools
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.5.1
         with:
@@ -51,7 +51,7 @@ jobs:
           git config --global user.name "PSTools Mirror / BOT"
           git add .
           git commit -m "Update PSUtils
-          `cat psversion.txt`"
+          `cat PSTools/psversion.txt`"
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
         with:
