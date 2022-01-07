@@ -50,7 +50,8 @@ jobs:
           git config --global user.email "pstools-mirror[bot]"
           git config --global user.name "PSTools Mirror / BOT"
           git add .
-          git commit -m "Update PSUtils"
+          git commit -m "Update PSUtils
+          `cat psversion.txt`"
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
         with:
