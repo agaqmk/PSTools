@@ -1,5 +1,5 @@
 # PSTools Archive
-[![Auto Updater](https://github.com/MokiyCodes/PSTools/actions/workflows/updater.yml/badge.svg)](https://github.com/MokiyCodes/PSTools/actions/workflows/updater.yml)
+[![Auto Updater](https://github.com/MokiyCodes/PSTools/actions/workflows/updater.yml/badge.svg?branch=main)](https://github.com/MokiyCodes/PSTools/actions/workflows/updater.yml)
 
 This Repository exists for the purpose of archiving PSTools.
 
