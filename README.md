@@ -7,4 +7,6 @@ Occasionally updated from <https://docs.microsoft.com/en-us/sysinternals/downloa
 
 Most updates are done using CI/CD. Releases are done manually.
 
-[Current PSTools Repo Version](psversion.txt)
+[Current PSTools Version](bin/psversion.txt)<br/>
+[Latest Fetch Time](LastUpdated.txt)<br/>
+[Full SysInternals Variant](https://github.com/Mokiy2/SysInternalsSuite)
