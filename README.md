@@ -9,4 +9,5 @@ Most updates are done using CI/CD. Releases are done manually.
 
 [Current PSTools Version](bin/psversion.txt)<br/>
 [Latest Fetch Time](LastUpdated.txt)<br/>
-[Full SysInternals Variant](https://github.com/Mokiy2/SysInternalsSuite)
+[Full SysInternals Variant](https://github.com/Mokiy2/SysInternalsSuite)<br/>
+[Automatic PSTools Installer I made](https://github.com/MokiyCodes/PSInstaller/) (uses this repository)
