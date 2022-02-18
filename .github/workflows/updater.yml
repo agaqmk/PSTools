@@ -26,6 +26,9 @@ jobs:
       - name: Clear all exes
         run: |
           rm -f ./PSTools/*.exe
+      - name: Remove pstools dir
+        run: |
+          rm -f ./PSTools
           
       # Runs a single command using the runners shell
       - name: Write Last Updated
@@ -38,7 +41,7 @@ jobs:
           # URL of the file to download
           url: https://download.sysinternals.com/files/PSTools.zip
           # New filename to rename the downloaded file
-          destination: PSTools
+          destination: bin
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.5.1
         with:
@@ -51,7 +54,7 @@ jobs:
           git config --global user.name "PSTools Mirror / BOT"
           git add .
           git commit -m "Update PSUtils
-          `cat PSTools/psversion.txt`"
+          `cat bin/psversion.txt`"
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
         with:
