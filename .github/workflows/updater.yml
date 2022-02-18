@@ -26,9 +26,6 @@ jobs:
       - name: Clear all exes
         run: |
           rm -f ./PSTools/*.exe
-      - name: Remove pstools dir
-        run: |
-          rm -rf ./PSTools
           
       # Runs a single command using the runners shell
       - name: Write Last Updated
