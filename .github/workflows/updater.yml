@@ -25,7 +25,7 @@ jobs:
 
       - name: Clear all exes
         run: |
-          rm -f ./PSTools/*.exe
+          rm -f ./bin/*.exe
           
       # Runs a single command using the runners shell
       - name: Write Last Updated
