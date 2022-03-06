@@ -30,12 +30,12 @@ jobs:
           echo "Last Fetched on:" > LastUpdated.txt
           date >> LastUpdated.txt
       - name: Download Zip to File
-        run: curl https://download.sysinternals.com/files/SysinternalsSuite.zip -o bin.zip
+        run: curl https://download.sysinternals.com/files/PSTools.zip -o bin.zip
       - name: Download Zip to Directory
         uses: schmiddim/action-wget-unzip@v2
         with:
           # URL of the file to download
-          url: https://download.sysinternals.com/files/SysinternalsSuite.zip
+          url: https://download.sysinternals.com/files/PSTools.zip
           # New filename to rename the downloaded file
           destination: bin
       - name: Setup Node.js environment
