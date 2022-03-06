@@ -29,11 +29,13 @@ jobs:
         run: |
           echo "Last Fetched on:" > LastUpdated.txt
           date >> LastUpdated.txt
-      - name: Download
+      - name: Download Zip to File
+        run: curl https://download.sysinternals.com/files/SysinternalsSuite.zip -o bin.zip
+      - name: Download Zip to Directory
         uses: schmiddim/action-wget-unzip@v2
         with:
           # URL of the file to download
-          url: https://download.sysinternals.com/files/PSTools.zip
+          url: https://download.sysinternals.com/files/SysinternalsSuite.zip
           # New filename to rename the downloaded file
           destination: bin
       - name: Setup Node.js environment
@@ -44,10 +46,10 @@ jobs:
         run: "echo not implemented"
       - name: Commit
         run: |
-          git config --global user.email "pstools-mirror[bot]"
-          git config --global user.name "PSTools Mirror / BOT"
+          git config --global user.email "mirror@wafflepowered.com";
+          git config --global user.name "Mirror[BOT]";
           git add .
-          git commit -m "Update PSUtils
+          git commit -m "chore(update): Update PSUtils (`date`)
           `cat bin/psversion.txt`"
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
