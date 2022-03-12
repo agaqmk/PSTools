@@ -1,5 +1,5 @@
 # PSTools Archive
-[![Auto Updater](https://github.com/MokiyCodes/PSTools/actions/workflows/updater.yml/badge.svg?branch=main)](https://github.com/MokiyCodes/PSTools/actions/workflows/updater.yml)
+[![Auto Updater](https://github.com/MokiyCodes/PSTools/actions/workflows/updater.yml/badge.svg?branch=main)](https://github.com/MokiyCodes/PSTools/actions/workflows/updater.yml) [![Conventional Commits 1.0.0](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
 
 This Repository exists for the purpose of archiving PSTools.
 
