@@ -51,8 +51,8 @@ jobs:
           git add .
           git commit -m "chore(update): Update PSUtils (`date`)
           `cat bin/psversion.txt`"
-      - name: GitHub Push
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.PAT }}
-          branch: main
+      - name: Run a multi-line script
+        run: |
+          git config --global user.email "torvalds@users.noreply.github.com"
+          git config --global user.name "Linus Torvalds"
+          git push
