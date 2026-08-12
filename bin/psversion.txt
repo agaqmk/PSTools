@@ -1,1 +1,1 @@
-PsTools Version in this package: 2.51
+PsTools Version in this package: 2.52
